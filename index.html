@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hussam Khalil</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+IT+Trad:wght@100..400&family=Roboto+Slab:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <canvas id="space" class="starfield-canvas" aria-hidden="true"></canvas>
+    <header class="site-header">
+      <div class="header-inner">
+        <h1>Hussam</h1>
+        <nav class="bar" aria-label="Main navigation">
+          <a class="brand" href="#top">Hussam Khalil</a>
+          <div class="nav-actions">
+            <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark mode" title="Switch to dark mode" aria-pressed="false">
+              <span class="toggle-icon" aria-hidden="true">☾</span>
+            </button>
+            <div class="nav-links">
+              <a href="#about">About</a>
+              <a href="#interests">Interests</a>
+              <a href="#contact">Contact</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="photo-section section-wrap" id="about" aria-label="About me">
+        <img class="profile-photo" src="assets\IMG_20261104_133346 (Edited 4).jpg" alt="Portrait illustration placeholder for your photo">
+      </section>
+      <p class="About-me">
+            <span>Hussam Khalil</span>
+            <span aria-hidden="true" class="opacity-40">·</span>
+            <span>CS</span>
+            <span aria-hidden="true" class="opacity-40">·</span>
+            <span>225101612</span>
+      </p>
+
+      <section class="section-wrap interests" id="interests" aria-labelledby="interests-title">
+        <div class="section-heading">
+          <h2 id="interests-title">About me</h2>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <h3>
+              <svg class="card-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="m8 8-4 4 4 4M16 8l4 4-4 4M14 5l-4 14" />
+              </svg>
+              Programming
+            </h3>
+            <p>I have extensive experience with C++, C#, and web development.</p>
+          </article>
+
+          <article class="card">
+            <h3>
+              <svg class="card-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="3" y="6" width="13" height="12" rx="2" />
+                <path d="m16 10 5-3v10l-5-3zM8 10h3M8 14h3" />
+              </svg>
+              Editing videos
+            </h3>
+            <p>I have over 8 years of experience editing videos.</p>
+          </article>
+
+          <article class="card">
+            <h3>
+              <svg class="card-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 7c-2.2-2-5.2-2.4-9-1.4v13c3.8-1 6.8-.6 9 1.4m0-13c2.2-2 5.2-2.4 9-1.4v13c-3.8-1-6.8-.6-9 1.4m0-13v13" />
+              </svg>
+              Reading
+            </h3>
+            <p>I enjoy reading books about programming.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact section-wrap" id="contact" aria-labelledby="contact-title">
+        <div class="contact-copy">
+          <h2 id="contact-title">Let’s connect</h2>
+        </div>
+        <form class="contact-form">
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" placeholder="Your name">
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com">
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 Hussam Khalil</p>
+    </footer>
+  </body>
+</html>

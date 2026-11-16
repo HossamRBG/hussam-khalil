@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 820" role="img" aria-labelledby="title desc">
+  <title id="title">Portrait illustration</title>
+  <desc id="desc">A person standing by a sunny window with a plant and soft hills outside.</desc>
+  <defs>
+    <linearGradient id="wall" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f2e5d2"/>
+      <stop offset="1" stop-color="#d9c6ad"/>
+    </linearGradient>
+    <linearGradient id="shirt" x1="0" y1="0" x2="0.8" y2="1">
+      <stop offset="0" stop-color="#6f927d"/>
+      <stop offset="1" stop-color="#456755"/>
+    </linearGradient>
+    <clipPath id="arch">
+      <path d="M433 111h209v321H433zM433 215a104 104 0 0 1 209 0"/>
+    </clipPath>
+  </defs>
+  <rect width="720" height="820" rx="40" fill="url(#wall)"/>
+  <circle cx="121" cy="143" r="66" fill="#f7c96c" opacity=".9"/>
+  <path d="M0 586c116-85 218-51 328 4s235 48 392-29v259H0z" fill="#c5b59f" opacity=".58"/>
+  <path d="M433 215a104 104 0 0 1 209 0v217H433z" fill="#f8f3e9"/>
+  <g clip-path="url(#arch)">
+    <rect x="433" y="111" width="209" height="321" fill="#a9c4b2"/>
+    <circle cx="586" cy="166" r="38" fill="#f6cb75"/>
+    <path d="M416 335c56-82 103-95 147-42 35 43 57 33 101-15v169H416z" fill="#87a98d"/>
+    <path d="M411 385c67-60 108-54 147-12 45 49 81 45 145 0v90H411z" fill="#668774"/>
+  </g>
+  <path d="M433 215a104 104 0 0 1 209 0v217H433z" fill="none" stroke="#f8f3e9" stroke-width="14"/>
+  <path d="M537 111v321M433 300h209" stroke="#f8f3e9" stroke-width="9"/>
+  <path d="M61 646c45-11 61-44 70-101 4-23 20-30 29-10 11 25 3 57-8 77 37-34 52-67 62-110 5-21 24-18 25 3 3 44-18 82-43 112 38-18 62-39 91-73 13-15 29-2 19 14-34 54-81 90-143 106v156H61z" fill="#708c73"/>
+  <path d="M92 817c26-93 29-169 34-272M95 609l-38-39M119 656l39-33M134 581l32-40M121 707l-39-27M153 691l39-12" fill="none" stroke="#536e59" stroke-width="8" stroke-linecap="round"/>
+  <ellipse cx="339" cy="760" rx="171" ry="27" fill="#8f806d" opacity=".2"/>
+  <path d="M201 820c9-118 43-227 136-227s127 109 136 227" fill="url(#shirt)"/>
+  <path d="M286 574h103v95c0 31-23 56-51 56s-52-25-52-56z" fill="#d99d76"/>
+  <ellipse cx="337" cy="427" rx="119" ry="157" fill="#e8b18b"/>
+  <path d="M220 424c-12-137 47-210 147-195 83 12 115 71 99 188-12-34-31-54-58-70-29-16-55-55-65-89-26 50-68 81-123 91z" fill="#3e4239"/>
+  <path d="M233 463c-29-18-43-2-37 27 5 25 23 42 46 40M442 463c28-18 43-2 37 27-6 25-23 42-46 40" fill="#e8b18b"/>
+  <path d="M286 428c12-9 25-9 37-2M352 426c12-7 25-7 37 2" fill="none" stroke="#564339" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="305" cy="447" r="5" fill="#3e3932"/>
+  <circle cx="370" cy="447" r="5" fill="#3e3932"/>
+  <path d="M323 486c10 7 20 7 30 0" fill="none" stroke="#a86458" stroke-width="6" stroke-linecap="round"/>
+  <path d="M274 591c20 25 42 37 63 37s43-12 63-37l54 44-69 71-48-42-49 42-69-71z" fill="#f1e8d8"/>
+</svg>
