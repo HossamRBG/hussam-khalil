@@ -37,7 +37,7 @@
 
     <main id="top">
       <section class="photo-section section-wrap" id="about" aria-label="About me">
-        <img class="profile-photo" src="assets\IMG_20261104_133346 (Edited 4).jpg" alt="Portrait illustration placeholder for your photo">
+        <img class="profile-photo" src="assets\IMG_20261104_133346 (Edited 3).jpg" alt="Portrait illustration placeholder for your photo">
       </section>
       <p class="About-me">
             <span>Hussam Khalil</span>
@@ -90,7 +90,9 @@
         <div class="contact-copy">
           <h2 id="contact-title">Let’s connect</h2>
         </div>
-        <form class="contact-form">
+        <form class="contact-form"
+              action="https://formsubmit.co/el/yipico"
+              method="POST">
           <div class="field">
             <label for="name">Name</label>
             <input id="name" name="name" type="text" autocomplete="name" placeholder="Your name">
@@ -99,6 +101,7 @@
             <label for="email">Email</label>
             <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com">
           </div>
+          <button class="send-button" type="submit">Send</button>
         </form>
       </section>
     </main>

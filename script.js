@@ -199,3 +199,5 @@ reducedMotion.addEventListener?.("change", () => {
 
 resizeCanvas();
 startAnimation();
+
+
