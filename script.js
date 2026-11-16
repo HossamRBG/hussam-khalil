@@ -16,6 +16,8 @@ let pointerOffsetX = 0;
 let pointerOffsetY = 0;
 let pointerTargetX = 0;
 let pointerTargetY = 0;
+const pointerStrength = 0.3;
+const pointerResponsiveness = 0.1;
 
 function getStarColor() {
   return getComputedStyle(document.body).getPropertyValue("--star-rgb").trim() || "225, 242, 240";
@@ -32,7 +34,7 @@ function createStar(startAtRandomDepth = false) {
     x: Math.random() * canvasWidth - canvasWidth / 2,
     y: Math.random() * canvasHeight - canvasHeight / 2,
     z: startAtRandomDepth ? Math.max(1, Math.random() * maxDepth) : maxDepth,
-    speed: Math.random() * 6 + 6,
+    speed: Math.random() * 7 + 7,
     baseRadius: Math.random() * 2 + 1,
     lastX: null,
     lastY: null,
@@ -48,7 +50,7 @@ function drawFrame(elapsed = 0) {
   context.clearRect(0, 0, canvasWidth, canvasHeight);
 
   if (elapsed > 0) {
-    const easing = 1 - Math.pow(0.98, elapsed / 16.67);
+    const easing = 1 - Math.pow(1 - pointerResponsiveness, elapsed / 16.67);
     pointerOffsetX += (pointerTargetX - pointerOffsetX) * easing;
     pointerOffsetY += (pointerTargetY - pointerOffsetY) * easing;
   }
@@ -102,7 +104,7 @@ function resizeCanvas() {
   canvas.height = Math.round(canvasHeight * pixelRatio);
   context.setTransform(pixelRatio, 0, 0, pixelRatio, 0, 0);
 
-  const starCount = Math.min(4000, Math.max(4000, Math.round((canvasWidth * canvasHeight) / 1)));
+  const starCount = Math.min(9000, Math.max(4500, Math.round((canvasWidth * canvasHeight) / 1200)));
   stars = Array.from({ length: starCount }, () => createStar(true));
   drawFrame(0);
 }
@@ -144,8 +146,8 @@ function followPointer(event) {
     return;
   }
 
-  pointerTargetX = (event.clientX - canvasWidth / 2) * 0.12;
-  pointerTargetY = (event.clientY - canvasHeight / 2) * 0.12;
+  pointerTargetX = (event.clientX - canvasWidth / 2) * pointerStrength;
+  pointerTargetY = (event.clientY - canvasHeight / 2) * pointerStrength;
 }
 
 function resetPointer() {

@@ -106,10 +106,20 @@ h1 {
 }
 
 .brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
   font-size: 1rem;
   font-weight: 750;
   letter-spacing: -0.03em;
   text-decoration: none;
+}
+
+.brand-mark {
+  display: block;
+  width: 36px;
+  height: 36px;
+  flex: 0 0 36px;
 }
 
 .nav-links {
@@ -255,7 +265,7 @@ h2 {
   padding: 48px;
   border-radius: 24px;
   background: var(--surface-muted);
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .contact-form {
