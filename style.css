@@ -154,7 +154,7 @@ h1 {
 
 .profile-photo {
   display: block;
-  width: min(100%, 390px);
+  width: min(100%, 220px);
   border-radius: 360px;
   background: var(--surface-muted);
   box-shadow: var(--shadow);
